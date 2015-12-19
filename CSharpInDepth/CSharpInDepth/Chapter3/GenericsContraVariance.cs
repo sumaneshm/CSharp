@@ -1,9 +1,6 @@
-﻿using CSharpInDepth.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CSharpInDepth.Common;
 
 namespace CSharpInDepth.Chapter3
 {
@@ -33,11 +30,13 @@ namespace CSharpInDepth.Chapter3
         {
             IComparer<IShape> comparer = new AreaComparer();
 
-            List<Circle> circles = new List<Circle>();
-            circles.Add(new Circle { Area = 120 });
-            circles.Add(new Circle { Area = 20 });
-            circles.Add(new Circle { Area = 130 });
-            circles.Add(new Circle { Area = 440 });
+            List<Circle> circles = new List<Circle>
+            {
+                new Circle {Area = 120},
+                new Circle {Area = 20},
+                new Circle {Area = 130},
+                new Circle {Area = 440}
+            };
 
             circles.Sort(comparer);
 

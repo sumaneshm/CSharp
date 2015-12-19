@@ -47,4 +47,5 @@ namespace ExploreFluentAssertions.Business
             return other != null && other.Age == Age && other.Name == Name;// && base.Equals(obj);
         }
     }
+   
 }
